@@ -1,7 +1,10 @@
 import torch
 import torch.nn as nn
 import os
+import requests
 
+from .vonenet import VOneNet
+from .myresnet import myResNet
 from torch.nn import Module
 
 FILE_WEIGHTS = {'voneresnet18': 'epoch_60.pth.tar',
